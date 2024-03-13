@@ -1,0 +1,7 @@
+<launch>
+  <arg name="stage" default="1"/>
+  <param name="stage_number"  value="$(arg stage)"/>
+  <!-- <node pkg="dqn" type="DDQN_GPU.py" name="DDQN_GPU" output="screen" /> -->
+  <!-- <node pkg="dqn" type="DQN_GPU.py" name="DQN_GPU" output="screen" /> -->
+  <node pkg="dqn" type="Dueling_DDQN_GPU_pre_2_optimal_2.py" name="Dueling_DDQN_GPU_pre_2_optimal" output="screen" />
+</launch>
